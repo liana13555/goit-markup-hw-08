@@ -1,0 +1,28 @@
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-nav__link {
+  color: $primary-text-color;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  } 
+}
+
+.contact-nav__icon {
+  fill: currentColor;
+  margin-right: 10px;
+
+  &:hover
+  &:focus {
+    fill: $accent-color;
+  }
+}

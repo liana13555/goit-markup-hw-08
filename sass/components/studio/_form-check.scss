@@ -1,0 +1,47 @@
+.form-check {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.form-check__label {
+  position: relative;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.form-check__input {
+  margin-left: 24px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-check__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
+}
+
+.form-check__icon .form-check__channel {
+  display: none;
+}
+
+.form-check__input:checked ~ .form-check__icon .form-check__channel {
+  display: block;
+}
+
+.form-check__input:checked ~ .form-check__icon {
+  border: none;
+  background-color: $accent-color;
+}
+
+.form-check__agreement {
+  color: $accent-color;
+  text-decoration-line: underline;
+}

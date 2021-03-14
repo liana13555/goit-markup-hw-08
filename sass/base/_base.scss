@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  background-color: $white-color;
+  color: $primary-text-color;
+
+  font-family: $primary-font-family;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

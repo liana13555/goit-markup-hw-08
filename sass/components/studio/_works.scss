@@ -1,0 +1,38 @@
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * #{$feature-gap});
+  margin-top: calc(-1 * #{$feature-gap});
+}
+  
+.work__item {
+  position: relative;
+  flex-basis: calc(100% / 3 - #{$feature-gap});
+  margin-left: #{$feature-gap};
+  margin-top: #{$feature-gap};
+}
+
+.work__image {
+  display: block;
+  width: 100%;
+}
+
+.work__type {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.work__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $white-color;
+}

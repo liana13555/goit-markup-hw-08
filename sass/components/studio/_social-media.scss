@@ -1,0 +1,40 @@
+.social-media {
+  display: flex;
+  justify-content: space-between;
+ 
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.social-media__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $white-color;
+  border-radius: 50%;
+}
+
+.social-media__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px; 
+
+  color: $icon-color;
+  border-radius: 50%;
+
+  transition: background-color 250ms $timing-function, color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+  }
+} 
+
+.social-media__icon {
+  fill: currentColor;
+}
