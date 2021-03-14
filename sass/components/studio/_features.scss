@@ -1,35 +1,48 @@
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .feature {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * #{$feature-gap});
+    margin-top: calc(-1 * #{$feature-gap});
+  }
 
-  margin-left: calc(-1 * #{$feature-gap});
-  margin-top: calc(-1 * #{$feature-gap});
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * #{$feature-gap});
+    margin-top: calc(-1 * #{$feature-gap});
+  }
 }
 
 .feature__item {
-  flex-basis: calc(100% / 4 - #{$feature-gap});
-  margin-left: $feature-gap;
-  margin-top: $feature-gap;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - #{$feature-gap});
+    margin-left: $feature-gap;
+    margin-top: $feature-gap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - #{$feature-gap});
+    margin-left: $feature-gap;
+    margin-top: $feature-gap;
+  }
 }
 
 .feature__pic {
   background-color: $additional-bg-color;
-  padding: 25px 100px;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 480px) {
+    padding: 25px 190px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 25px 142px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 25px 100px;
+  }
 }
 
 .feature__title {
@@ -44,4 +57,18 @@
 .feature__text {
   font-size: 14px;
   line-height: 1.7;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
