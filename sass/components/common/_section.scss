@@ -1,7 +1,14 @@
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
-
+  @media screen and (min-width: 480px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+  
   &--color {
     background-color: $additional-bg-color;
   }
@@ -9,13 +16,28 @@
   &--top {
     padding-top: 0;
   }
+
+  &--hide {
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
 }
 
 .section__title {
-  margin-bottom: 50px;
   color: $title-text-color;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
   text-align: center;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
+    
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
