@@ -6,8 +6,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
     margin-left: calc(-1 * #{$feature-gap});
     margin-top: calc(-1 * #{$feature-gap});
   }
@@ -26,7 +24,6 @@
 
   @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 15px);
-    
   }
 
   @media screen and (min-width: 1200px) {
