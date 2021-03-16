@@ -1,4 +1,8 @@
 .form-footer {
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+  
   @media screen and (min-width: 1200px) {
     max-width: 570px;
   }

@@ -1,9 +1,10 @@
 .subscribe {
+  margin-top: 20px;
+
   @media screen and (max-width: 1199px) {
     display: flex; 
     flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    align-items: center;    
   }
 
   @media screen and (min-width: 1200px) {

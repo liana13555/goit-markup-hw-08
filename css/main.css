@@ -805,7 +805,7 @@ textarea {
   background-color: #2f303a;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .page-footer__box {
     text-align: center;
   }
@@ -819,6 +819,19 @@ textarea {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__thumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -853,9 +866,9 @@ textarea {
   margin-bottom: 9px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .join {
-    margin-bottom: 60px;
+    margin-left: 70px;
   }
 }
 
@@ -925,6 +938,12 @@ textarea {
   fill: #ffffff;
 }
 
+@media screen and (max-width: 1199px) {
+  .form-footer {
+    margin-top: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .form-footer {
     max-width: 570px;
@@ -936,6 +955,10 @@ textarea {
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.subscribe {
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -950,7 +973,6 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 20px;
   }
 }
 
