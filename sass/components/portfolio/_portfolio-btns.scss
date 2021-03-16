@@ -1,8 +1,24 @@
 .btns-set {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }  
+
+.btns-set__item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .btns-set__button {
   padding: 6px 22px;
@@ -28,6 +44,3 @@
   }
 }
 
-.btns-set__item:not(:last-child) {
-  margin-right: 8px;
-}

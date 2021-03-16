@@ -1,18 +1,39 @@
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-  margin-left: calc(-1 * #{$feature-gap});
-  margin-top: calc(-1 * #{$feature-gap});
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * #{$feature-gap});
+    margin-top: calc(-1 * #{$feature-gap});
+  }
 }
 
 .portfolio-list__item {
-  flex-basis: calc(100% / 3 - #{$feature-gap});
-  margin-left: #{$feature-gap};
-  margin-top: #{$feature-gap};
   border: 1px solid #EEEEEE;
 
   transition: box-shadow 250ms $timing-function;
+
+  @media screen and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 15px);
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - #{$feature-gap});
+    margin-left: #{$feature-gap};
+    margin-top: #{$feature-gap};
+  }
 
   &:hover,
   &:focus {
