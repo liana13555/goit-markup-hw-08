@@ -1,5 +1,7 @@
 .form-footer {
-  max-width: 570px;
+  @media screen and (min-width: 1200px) {
+    max-width: 570px;
+  }
 }
 
 .form-footer__text {

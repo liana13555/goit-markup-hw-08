@@ -1,10 +1,24 @@
 .social-media {
   display: flex;
   justify-content: space-between;
- 
-  padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
+
+  @media screen and (min-width: 480px) {
+    padding-bottom: 24px;
+    padding-left: 122px;
+    padding-right: 122px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    padding-bottom: 24px;
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+  } 
 }
 
 .social-media__item {
