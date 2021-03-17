@@ -18,6 +18,17 @@
           <nav class="page-header__nav">
             <a href="./index.html" class="logo"><span class="logo__part">Web</span>Studio
             </a>
+
+            <button type="button" class="page-header__button is-open" 
+            aria-expanded="false"
+            data-menu-button>
+              <svg width="40px" height="40px"
+              aria-label="Переключатель мобильного меню">
+                <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+
             <ul class="site-nav">
             <li class="site-nav__item"><a href="" class="site-nav__link site-nav__link--active">Студия</a></li>
             <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
@@ -422,5 +433,6 @@
       
     </div> 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html> 

@@ -79,6 +79,28 @@ textarea {
   border-bottom: 1px solid #ECECEC;
 }
 
+.page-header__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.page-header__button .icon-close {
+  display: none;
+}
+
+.page-header__button.is-open .icon-close {
+  display: block;
+}
+
+.page-header__button.is-open .icon-menu {
+  display: none;
+}
+
 .logo {
   color: #000000;
   font-family: "Raleway", sans-serif;
