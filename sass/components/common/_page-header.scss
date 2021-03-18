@@ -10,7 +10,8 @@
   align-items: center;
   justify-content: space-between;
   min-height: 60px;
-
+  width: 100%;
+  
   @media screen and (min-width: 768px) {
     min-height: 80px;
   }
@@ -21,21 +22,23 @@
 }   
 
 .page-header__button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
   border: none;
+  cursor: pointer;
   background-color: transparent;
+  outline: none;
+  
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  // &:hover,
+  // &:focus {
+  //   color: $accent-color;
+  // }
 }
 
-.page-header__button .icon-close {
-  display: none;
-}
-
-.page-header__button.is-open .icon-close {
-  display: block;
-}
-
-.page-header__button.is-open .icon-menu {
-  display: none;
-}
