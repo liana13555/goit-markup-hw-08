@@ -1,8 +1,13 @@
 .social-media {
   display: flex;
-  justify-content: space-between;
+  
+  @media screen and (max-width: 479px) {
+    padding-bottom: 24px;
+    justify-content: center;
+  }
 
   @media screen and (min-width: 480px) {
+    justify-content: space-between;
     padding-bottom: 24px;
     padding-left: 122px;
     padding-right: 122px;

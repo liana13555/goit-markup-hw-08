@@ -8,6 +8,12 @@
 .page-header__nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+
+  @media screen and (min-width: 768px) {
+    min-height: 80px;
+  }
 }
 
 .page-header--border {
@@ -15,7 +21,7 @@
 }   
 
 .page-header__button {
-  display: inline-flex;
+  display: block;
   margin: 0;
   padding: 0;
   border: none;

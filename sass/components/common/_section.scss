@@ -1,5 +1,5 @@
 .section {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     padding-bottom: 60px;
     padding-top: 60px;
   }
@@ -29,7 +29,7 @@
   font-weight: 700;
   text-align: center;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 30px;
     font-size: 28px;
     line-height: 1.18;

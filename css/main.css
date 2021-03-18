@@ -35,27 +35,23 @@ textarea {
 }
 
 .container {
+  max-width: 480px;
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -73,6 +69,16 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__nav {
+    min-height: 80px;
+  }
 }
 
 .page-header--border {
@@ -80,9 +86,7 @@ textarea {
 }
 
 .page-header__button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: block;
   margin: 0;
   padding: 0;
   border: none;
@@ -118,10 +122,16 @@ textarea {
 }
 
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 93px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 93px;
+  }
 }
 
 .site-nav__item:not(:last-child) {
@@ -182,10 +192,16 @@ textarea {
 }
 
 .contact-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contact-nav__item:not(:last-child) {
@@ -211,7 +227,7 @@ textarea {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .section {
     padding-bottom: 60px;
     padding-top: 60px;
@@ -245,7 +261,7 @@ textarea {
   text-align: center;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .section__title {
     margin-bottom: 30px;
     font-size: 28px;
@@ -274,7 +290,7 @@ textarea {
   background-color: #2f303a;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .hero {
     height: 400px;
     padding-top: 118px;
@@ -298,7 +314,7 @@ textarea {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .hero__title {
     font-size: 26px;
     line-height: 1.62;
@@ -352,23 +368,29 @@ textarea {
 .feature__pic {
   background-color: #f5f4fa;
   margin-bottom: 30px;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 @media screen and (min-width: 480px) {
   .feature__pic {
-    padding: 25px 190px;
+    padding-left: 190px;
+    padding-right: 190px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .feature__pic {
-    padding: 25px 142px;
+    padding-left: 142px;
+    padding-right: 142px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .feature__pic {
-    padding: 25px 100px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
@@ -515,13 +537,22 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+@media screen and (max-width: 479px) {
+  .social-media {
+    padding-bottom: 24px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (min-width: 480px) {
   .social-media {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-bottom: 24px;
     padding-left: 122px;
     padding-right: 122px;
@@ -584,7 +615,7 @@ textarea {
   fill: currentColor;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .clients {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -608,14 +639,14 @@ textarea {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .clients__item {
     width: calc(100% / 2 - 15px);
     height: 90px;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) and (max-width: 767px) {
   .clients__item:nth-child(-n + 4) {
     margin-bottom: 30px;
   }

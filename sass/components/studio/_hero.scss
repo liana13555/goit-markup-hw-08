@@ -14,7 +14,7 @@
   text-align: center;
   background-color: $secondary-bg-color;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -36,7 +36,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     font-size: 26px;
     line-height: 1.62;
   }
