@@ -10,8 +10,11 @@
   align-items: center;
   justify-content: space-between;
   min-height: 60px;
-  width: 100%;
-  
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
   @media screen and (min-width: 768px) {
     min-height: 80px;
   }
@@ -31,14 +34,20 @@
   cursor: pointer;
   background-color: transparent;
   outline: none;
-  
+
+  transition: color 250ms $timing-function;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
 
-  // &:hover,
-  // &:focus {
-  //   color: $accent-color;
-  // }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.page-header__icon {
+  fill: currentColor;
 }
 

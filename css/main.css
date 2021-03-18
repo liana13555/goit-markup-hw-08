@@ -73,7 +73,12 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 60px;
-  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header__nav {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -102,12 +107,22 @@ textarea {
   cursor: pointer;
   background-color: transparent;
   outline: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
   .page-header__button {
     display: none;
   }
+}
+
+.page-header__button:hover, .page-header__button:focus {
+  color: #2196f3;
+}
+
+.page-header__icon {
+  fill: currentColor;
 }
 
 .logo {
@@ -279,9 +294,11 @@ textarea {
 
 .site-mobile__link {
   color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-mobile__link--active {
+.site-mobile__link:hover, .site-mobile__link:focus {
   color: #2196f3;
 }
 

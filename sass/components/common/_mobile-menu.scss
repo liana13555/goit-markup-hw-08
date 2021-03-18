@@ -20,8 +20,10 @@
 
 .site-mobile__link {
   color: $title-text-color;  
+  transition: color 250ms $timing-function;
 
-  &--active {
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 }
