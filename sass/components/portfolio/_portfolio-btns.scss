@@ -1,5 +1,5 @@
 .btns-set {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
@@ -16,7 +16,11 @@
 }  
 
 .btns-set__item:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 8px;  
+
+  &:first-child {
+    margin-bottom: 15px;
+  }
 }
 
 .btns-set__button {

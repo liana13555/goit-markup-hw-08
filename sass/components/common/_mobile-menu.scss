@@ -1,12 +1,15 @@
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  height: 100%;
+  width: 100%;
 }
 
 .site-mobile {
-  margin-bottom: 302px;
-    
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
@@ -29,8 +32,6 @@
 }
 
 .contact-mobile {
-  margin-bottom: 64px;
-
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;

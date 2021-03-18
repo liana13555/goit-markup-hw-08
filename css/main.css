@@ -275,13 +275,24 @@ textarea {
 }
 
 .mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  height: 100%;
+  width: 100%;
 }
 
 .site-mobile {
-  margin-bottom: 302px;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
@@ -303,7 +314,6 @@ textarea {
 }
 
 .contact-mobile {
-  margin-bottom: 64px;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
@@ -449,6 +459,9 @@ textarea {
   background-color: #2196f3;
   color: #ffffff;
   border-radius: 4px;
+  border: transparent;
+  outline: none;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -814,7 +827,7 @@ textarea {
   fill: currentColor;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .btns-set {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -842,6 +855,10 @@ textarea {
 
 .btns-set__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.btns-set__item:not(:last-child):first-child {
+  margin-bottom: 15px;
 }
 
 .btns-set__button {
@@ -1169,7 +1186,7 @@ textarea {
 }
 
 .subscribe__input {
-  width: 358px;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -1183,9 +1200,21 @@ textarea {
   outline: none;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    width: 450px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .subscribe__input {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
   }
 }
 
