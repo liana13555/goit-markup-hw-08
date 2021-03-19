@@ -16,11 +16,14 @@
 }  
 
 .btns-set__item:not(:last-child) {
-  margin-right: 8px;  
+  margin-right: 8px;
+}
 
-  &:first-child {
+  
+.btns-set__item:nth-child(-n + 3) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 15px;
-  }
+  }  
 }
 
 .btns-set__button {
