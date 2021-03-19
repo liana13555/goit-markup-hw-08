@@ -5,17 +5,27 @@
 
 .form-check__label {
   position: relative;
-  font-size: 14px;
-  line-height: 1.71;
-  margin-left: 12px;
+  font-size: 12px;
+  line-height: 1.17;
+  
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    // margin-left: 12px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form-check__input {
-  margin-left: 24px;
+  // margin-left: 24px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 24px;
+  }
 }
 
 .form-check__icon {

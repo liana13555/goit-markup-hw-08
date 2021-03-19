@@ -6,7 +6,12 @@
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1,15;
+  line-height: 1,5;
   text-align: center;
   color: $title-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1,15;
+  }
 }

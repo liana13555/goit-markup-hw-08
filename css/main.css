@@ -1290,6 +1290,12 @@ textarea {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .backdrop {
+    overflow-y: scroll;
+  }
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1305,8 +1311,6 @@ textarea {
   top: 50%;
   left: 50%;
   overflow-y: auto;
-  min-width: 528px;
-  min-height: 581px;
   padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1320,6 +1324,20 @@ textarea {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .modal {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
+
 .form-order {
   max-width: 448px;
 }
@@ -1328,9 +1346,16 @@ textarea {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1,15;
+  line-height: 1,5;
   text-align: center;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-order__title {
+    font-size: 20px;
+    line-height: 1,15;
+  }
 }
 
 .form-field {
@@ -1412,17 +1437,28 @@ textarea {
 
 .form-check__label {
   position: relative;
-  font-size: 14px;
-  line-height: 1.71;
-  margin-left: 12px;
+  font-size: 12px;
+  line-height: 1.17;
   cursor: pointer;
 }
 
+@media screen and (min-width: 1200px) {
+  .form-check__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .form-check__input {
-  margin-left: 24px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-check__input {
+    margin-left: 24px;
+  }
 }
 
 .form-check__icon {
