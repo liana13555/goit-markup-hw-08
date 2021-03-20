@@ -1,31 +1,57 @@
 .hero {
-  max-width: 1600px;
+  max-width: 480px; 
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
   background-image: linear-gradient(
     to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
     url(../images/overlay.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-
-  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center; 
   background-color: $secondary-bg-color;
+}   
 
-  @media screen and (max-width: 1199px) {
-    height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+      url(../images/new/overlay-480.jpg@2x.jpg);
+
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      max-width: 768px;
+      background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+        url(../images/new/overlay-768.jpg@2x.jpg);
+    }
+
+    @media screen and (min-width: 769px) {
+      max-width: 1600px;
+      height: 600px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      
+      background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+        url(../images/new/overlay-1600.jpg@2x.jpg);
+      background-size: cover;
+    }
   }
-  
-  @media screen and (min-width: 1200px) {
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-}
+}    
 
 .hero__title {
   margin-bottom: 30px;
