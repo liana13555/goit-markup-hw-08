@@ -1,7 +1,8 @@
 .btns-set {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {    
     margin-bottom: 40px;
   }
 
