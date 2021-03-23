@@ -13,8 +13,8 @@
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
-  
-  letter-spacing: 0.02em;   
+
+  letter-spacing: 0.02em;
 }
 
 .site-mobile__item:not(:last-child) {
@@ -22,11 +22,15 @@
 }
 
 .site-mobile__link {
-  color: $title-text-color;  
+  color: $title-text-color;
   transition: color 250ms $timing-function;
 
   &:hover,
   &:focus {
+    color: $accent-color;
+  }
+
+  &--active {
     color: $accent-color;
   }
 }
@@ -35,7 +39,7 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
-  letter-spacing: 0.02em; 
+  letter-spacing: 0.02em;
 }
 
 .contact-mobile__item:not(:last-child) {
@@ -54,15 +58,33 @@
 
 .media-mobile {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  
 }
 
 .media-mobile__link {
   color: $accent-color;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.media-mobile__item:not(:last-child) {
+  position: relative;
+  margin-right: 20px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 1px;
+    bottom: 50%;
+    background-color: rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
 }
